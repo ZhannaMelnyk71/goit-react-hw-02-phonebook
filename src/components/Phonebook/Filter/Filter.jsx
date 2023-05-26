@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import css from './Filter.module.css'
 
 
@@ -14,4 +14,9 @@ export const Filter = ({value, onChangeFilter}) => {
                 onChange={onChangeFilter} />
         </label>
     )
+}
+
+Filter.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChangeFilter: PropTypes.func.isRequired,
 }
